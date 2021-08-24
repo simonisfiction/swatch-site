@@ -1,0 +1,4 @@
+version 1:
+
+[ ] display the list of color hex codes in the console
+[ ] make nav bar with 3 buttons.
