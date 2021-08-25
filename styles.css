@@ -5,7 +5,19 @@ body {
   background-color: rgb(59, 48, 107);
 }
 
+a {
+  color: white;
+}
 
+h2 {
+  color: white;
+}
+label {
+  color: white;
+}
+li {
+  color: white;
+}
 nav {
   background-color: rgb(76, 63, 150);
   height: 60px;

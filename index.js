@@ -5,6 +5,7 @@ var swatch = [
 ];
 
 
+
 function displaySwatch() {
 
   let swatchUL = document.getElementById('swatch-ul');
