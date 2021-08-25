@@ -25,6 +25,8 @@ function displaySwatch() {
     colorDiv.style.borderWidth = '2px';
     colorDiv.style.borderColor = 'white';
 
+    newLi.style.listStyleType = 'none';
+
     newLi.appendChild(colorDiv);
     swatchUL.appendChild(newLi);
   }
