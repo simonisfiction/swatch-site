@@ -11,6 +11,8 @@ a {
 
 h2 {
   color: white;
+  font-family: monospace;
+  font-size: 30px;
 }
 label {
   color: white;

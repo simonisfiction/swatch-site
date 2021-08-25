@@ -21,6 +21,9 @@ function displaySwatch() {
     colorDiv.style.backgroundColor = swatch[i].color;
     colorDiv.style.height = '30px';
     colorDiv.style.width = '200px';
+    colorDiv.style.borderStyle = 'solid';    
+    colorDiv.style.borderWidth = '2px';
+    colorDiv.style.borderColor = 'white';
 
     newLi.appendChild(colorDiv);
     swatchUL.appendChild(newLi);
