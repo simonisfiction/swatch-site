@@ -22,14 +22,16 @@
     <content>
       <div id="login-panel">
         <form id="login-form">
-          <div id="login-labels">
-            <label for="first-name" >First Name</label><br>
-            <label for="last-name" >Last Name</label>
-          </div>
-          <div id="login-inputs">
-            <input name="first-name" class="text-boxes"><br>
-            <input name="last-name" class="text-boxes"><br>
-          </div>
+          
+            <label for="username" class="login-form-label">Username</label><br>
+            <input name="username" id="username" class="text-boxes login-form-input"><br>
+
+            <label for="password" class="login-form-label">Password</label><br>
+            <input name="password" id="password" class="text-boxes login-form-input"><br>
+
+            <button type="submit" class="button-styles login-form-button">Submit</button>
+
+          
           
 
           
@@ -40,8 +42,8 @@
       
     </content>
 
-    <script>
-
+    <script src="./index.js" charset="utf-8">
+      
     </script>
   </body>
 
