@@ -54,6 +54,11 @@ function generateSwatch() {
   displaySwatch();
 }
 
+function clearTextArea() {
+  let inputCodeTextArea = document.getElementById('target-site-textarea');
+  inputCodeTextArea.value = '';
+  console.log(rawText);
+}
 
 function scrapeRGB(rawText) {
   let rgbArr = [];
@@ -81,10 +86,12 @@ function scrapeRGB(rawText) {
 
 displaySwatch();
 
-let inputCodeTextArea = document.getElementById('target-site-textarea');
+let clearTextButton = document.getElementById('clear-text-area-button');
+clearTextButton.addEventListener('click', clearTextArea);
 
 let generateSwatchButton = document.getElementById('generate-swatch-button');
 generateSwatchButton.addEventListener('click', generateSwatch);
 
 let addButton = document.getElementById('add-button');
 addButton.addEventListener('click', addColor);
+
