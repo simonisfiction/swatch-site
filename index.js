@@ -24,6 +24,7 @@ function displaySwatch() {
     colorDiv.style.borderStyle = 'solid';    
     colorDiv.style.borderWidth = '2px';
     colorDiv.style.borderColor = 'white';
+    colorDiv.style.borderRadius = '10px';
 
     newLi.style.listStyleType = 'none';
 

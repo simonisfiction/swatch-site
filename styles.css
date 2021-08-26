@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: white;
+  color: rgb(100, 230, 230);
 }
 
 h2 {
@@ -75,7 +75,7 @@ p {
 
 textarea {
   font-family: monospace;
-
+  
   
 }
 
@@ -103,11 +103,12 @@ button:hover {
 
 /**************   LOGIN FORM STYLES   *************/
 #login-panel {
-  border-radius: 5%;
+  border-radius: 20px;
   text-align: center;
   margin: auto;
   width: 50%;
-
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: rgb(76, 63, 150);
 }
 
@@ -150,3 +151,13 @@ button:hover {
 
 /**************   FOOTER STYLES  *************/
 
+footer{
+  background-color: rgb(76, 63, 150);
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+.footer-text {
+  padding-top: 10px;
+
+}
