@@ -111,12 +111,15 @@ button:hover {
   background-color: rgb(76, 63, 150);
 }
 
-#login-form {
+.login-form {
   text-align: center;
   margin: auto;
   width: 50%;
-  
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
+
 
 #login-labels {
   text-align: left;
