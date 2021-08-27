@@ -1,15 +1,34 @@
 //swatch list
-var swatch = [
-        
-        
-];
+var swatch = [];
+var users = [];
 
+class Person {
+  constructor(username, password, email, firstName, lastName) {
+    console.log('person constructor called');
+    this.username = username;
+    this.password = password;
+    this.email = email;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
 
-
+function addUser() {
+  console.log('add user');
+  let username = document.getElementById('username');
+  let password = document.getElementById('password');
+  let email = document.getElementById('email');
+  let firstName = document.getElementById('first-name');
+  let lastName = document.getElementById('last-name');
+  console.log(newUser);
+  let newUser = new Person(username, password, email, firstName, lastName);
+  users.push(newUser);
+  console.log(users);
+}
 function displaySwatch() {
 
   let swatchUL = document.getElementById('swatch-ul');
-  swatchUL.innerHTML = '';
+  
 
   for (let i = 0; i < swatch.length; i++) {
     let newLi = document.createElement('li');
@@ -86,12 +105,27 @@ function scrapeRGB(rawText) {
 
 displaySwatch();
 
+let signupInput = document.getElementById('signup-input');
+if(signupInput) {
+  signupInput.addEventListener('click', addUser);
+}
+
+
 let clearTextButton = document.getElementById('clear-text-area-button');
-clearTextButton.addEventListener('click', clearTextArea);
+if(clearTextButton) {
+  clearTextButton.addEventListener('click', clearTextArea);
+}
+
 
 let generateSwatchButton = document.getElementById('generate-swatch-button');
-generateSwatchButton.addEventListener('click', generateSwatch);
+if(generateSwatchButton) {
+  generateSwatchButton.addEventListener('click', generateSwatch);
+}
+
 
 let addButton = document.getElementById('add-button');
-addButton.addEventListener('click', addColor);
+if(addButton) {
+  addButton.addEventListener('click', addColor);
+}
+
 
